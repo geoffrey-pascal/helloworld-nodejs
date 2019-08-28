@@ -577,4 +577,5 @@ img {
 #hostname {
 	display: block;
 	font-size: 22px;
+	color: grey;
 }
