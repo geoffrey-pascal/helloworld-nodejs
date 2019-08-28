@@ -20,6 +20,7 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 app.get('/', function (req, res) {
+  console.log("Serving new request")
   res.render(__dirname + "/static/template/index.html", {arch: os.arch(), hostname: os.hostname(), uptime: String(os.uptime()).toHHMMSS() });
 })
 
