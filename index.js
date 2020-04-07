@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const os = require('os');
 
+
+console.log(process.env);
+
 app.use(express.static('static/public'));
 
 app.engine('html', require('ejs').renderFile);
