@@ -3,7 +3,7 @@ const app = express();
 const os = require('os');
 
 
-console.log(process.env);
+
 
 console.log("mongodb://"+process.env['database-user']+":"+process.env['database-password']+"@"+process.env.MONGODB_SERVICE_HOST+":"+process.env.MONGODB_SERVICE_PORT+"/"+process.env['database-name']);
 
